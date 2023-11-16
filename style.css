@@ -1,0 +1,11 @@
+body {
+    counter-reset: incremento;
+}
+
+p {
+    counter-increment: incremento;
+}
+
+p::before {
+    content: counter(incremento) " - ";
+}
